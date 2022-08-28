@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text-red{
+   color:  rgb(142, 9, 9);  
+}
+li{
+    list-style-type: none;
+}
+.bg-blue{
+    background: rgb(9, 9, 82);
+}
+a{
+    text-decoration: none!important;
+}
+.logo{
+    width: 100px;
+}
+
+.w-90{
+    width: 90%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    min-width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+nav a {
+    margin: 0 10px;
+    font-size: 1.2em;
+    color:  black 
+}
+section {
+    height: auto!important;
+    
+}
+section h2 {
+    font-size: calc(60px + 1vmin);
+}
+
+#exampleModal{
+    height: auto!important;
+}
+.offcanvas-body{
+    overflow: hidden!important;
+    background: #f1f1f1;
+}
+
+.logo-blanc{
+    width: 100px;
+}
+
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .fade:not(.show){
+        opacity: 1!important;
+      }
+      
+      /* On hover, add a black background color */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      .mySlides img{
+        max-height: 400px!important;
+        max-width: 350px;
+      }
+      .section-3 img{
+        width: 100%;
+        height: 50%;
+      }
+      /* Indicateurs */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      /* Responsive */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+
+      .git i{
+        font-size: 2em;
+        margin:15px 0px;
+      }
+
+      .img{
+        width: 175px;
+        margin: 0 25px;
+        
+      }
+      #exampleModal{
+        z-index: 100000!important;
+        overflow-y: scroll!important;
+      }
+
+      .section-4 h4{
+        font-size: 2.3em;
+      }
+      .section-4 p{
+        font-size: 1.3em;
+      }
+
+      p{
+        font-size: 1.3em;
+      }
+      .offcanvas{
+        height: 350px!important;
+       
+      }

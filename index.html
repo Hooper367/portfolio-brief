@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio Fold creative</title>
+</head>
+
+<body class="light">
+    <!-- MODAL de contact  -->
+    <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="exampleModalLabel">Nous contacter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <form>
+                        <div class="mb-3 text-dark">
+                            <label for="recipient-name" class="col-form-label">Nom :</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3 text-dark">
+                            <label for="recipient-name" class="col-form-label">Prenom :</label>
+                            <input type="text" class="form-control" id="recipient-surname">
+                        </div>
+                        <div class="mb-3 text-dark">
+                            <label for="recipient-name" class="col-form-label">E-mail :</label>
+                            <input type="email" class="form-control" id="recipient-mail">
+                        </div>
+                        <div class="mb-3 text-dark">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary">Envoyer un message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav class=" d-flex  align-items-center ">
+            <div class="container d-lg-block d-none row justify-content-between w-90 m-auto">
+                <div class="navbar ">
+                    <img class='logo rounded-circle' src="img/logo-dark.png" alt="logo">
+                    <ul class="d-flex ">
+                        <li><a href="#Home">Accueil</a></li>
+                        <li><a href="#Notre-equipe">Notre équipe</a></li>
+                        <li><a href="#Realisations">Réalisations</a></li>
+                        <li><a href="#A-propos">A propos</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a></li>
+                    </ul>
+                    <button class="rounded-circle p-3 text-right" id="switch"><i class="fa-solid fa-moon"></i></button>
+                </div>     
+            </div>
+
+
+
+            <div class="navbar d-block d-lg-none navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="logo-blanc" src="img/logo-blanc.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header ">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="d-flex flex-column ">
+                                <li><a href="#Home">Accueil</a></li>
+                                <li><a href="#Notre-equipe">Notre équipe</a></li>
+                                <li><a href="#Realisations">Réalisations</a></li>
+                                <li><a href="#A-propos">A propos</a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section-1 w-90 m-auto text-center mt-5">
+                    <div class="container d-flex justify-content-center mx-auto text-center">
+                        <div class="row">
+                            <div class="col ">
+                                <h2>Fold crative</h2>
+                                <p>Fold creative est une agence web qui vous accueille dans ses locaux pour mettre en oeuvre vos projets créer depuis 2019 en plein coeur de Marseille. L'équipe de Fold creative est une histoire humaine a taille humaine c'est une collaboration de 4 développeurs au sein d'une même entreprise. Avec des parteneriats d'entreprises qui nous font confiance, si vous voulez que vos projets prennent vie n'hésitez plus venez nous rencontrer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col my-3">
+                        <h4>Entreprises partenaires</h4>
+                        <img class="img" src="img/cr.png" alt="credit agricole">
+                        <img class="img" src="img/design.jpg" alt="r design">
+                        <img class="img" src="img/thales.jpg" alt="entreprise thales">
+                        <img class="img" src="img/esn.jpg" alt="esn">
+                    </div>
+                    
+                
+        </section>
+        <section class="section-2 mt-100 bg-blue p-5">
+            <div class="descriptions w-90 m-auto text-center mt-100 text-white">
+                <h2 class="text-center text-white">Notre équipe</h2>
+                <hr>
+                <div class="container m-auto">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-between text-center flex-wrap mt-5 m-auto">
+                            <div class="card mx-auto text-dark " style="width: 18rem;">
+                                <img src="img/david.jpg" class="card-img-top" alt="image david">
+                                <div class="card-body">
+                                    <p class="card-text">David est notre développeur spécialisé dans la partie back-end il s'occupera que vos données soit protégées et vous garantira un travail de qualité .</p>
+                                </div>
+                            </div>
+                            <div class="card mx-auto text-dark mt-4" style="width: 18rem;">
+                                <img src="img/florian.jpg" class="card-img-top" alt="image florian">
+                                <div class="card-body">
+                                    <p class="card-text">Florian fait partie de notre pôle front-end developpeur créatif il saura donner vie à chacune de vos envies concernant votre site ou vos demandes graphiques.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class=" d-flex justify-content-center  mt-5">Voici l'equipe de FOLD creative qui vous accompagnera dans chacun de vos projets </p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-between flex-wrap mt-5">
+                                    <div class="card mx-auto text-dark mb-4 " style="width: 18rem;">
+                                        <img src="img/olivier-2.jpg" class="card-img-top" alt="image olivier">
+                                        <div class="card-body">
+                                            <p class="card-text">Olivier développeur depuis de nombreuses années maintenant, specialisé dans la partie front-end pourra vous créer une image de marque , vous accompagnera tout au long du processus de création de votre site web et saura mettre en valeur tous les points pour créer votre site à votre image.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="card mx-auto text-dark" style="width: 18rem;">
+                                        <img src="img/loick.jpg" class="card-img-top" alt="image loick">
+                                        <div class="card-body">
+                                            <p class="card-text">Loick développeur fullstack vous aidera a concevoir votre sites ou developper vos idées et les mettres en oeuvre il s'occupera aussi de la partie technique front et back. Tout au long du processus il vous donnera des retours pour l'avancer de votre projet.</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="section-3 w-90 m-auto ">
+            <h2 class="text-center mx-auto mt-3">Nos réalisations</h2>
+            <hr>
+            <div class="slideshow-container text-center">
+               
+
+                <div class="mySlides fade">           
+                  <img src="img/Ila_Yoga.png" alt="maquette" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="img/Cup_of_tea.png" alt="maquette 2 " style="width:100%">   
+                </div>
+                
+                <div class="mySlides fade">              
+                  <img src="img/Maquette_vanilla.jpg" alt="maquette 3" style="width:100%">
+                </div>
+                
+                </div>
+                <hr>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                <hr>
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center git d-flex flex-column">
+                            <h3>Nous suivres sur nos GitHub</h3>
+                            <hr>
+                            <a href=""><i class="fa-brands fa-square-github">Olivier Ereno</i></a>
+                            <a href=""><i class="fa-brands fa-square-github">Florian</i></a>
+                            <a href=""><i class="fa-brands fa-square-github">Loick Brabis</i></a>
+                            <a href=""><i class="fa-brands fa-square-github">David Awe</i></a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="section-4 bg-blue">
+            <div class="container m-auto text-center">
+                <div class="descriptions w-90 m-auto text-center text-white">
+                    <h4 class="py-4 mx-auto text-center">L'entreprise Fold creative</h4>
+                    <p class="text-center">L'entreprise Fold creative vous propose de nombreux services avec une équipe de 4 développeurs chacun avec leur spécialités. Nous vous proposons des prestations personnalisées pour s'adapter a chaque profil nous vous assurons des services de qualités pour que vos idées deviennent réalités avec Fold creative ne vous souciez plus de la partie technique ont s'en occupent pour vous.</p>
+
+
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-between flex-wrap mt-5">
+                            <div class="card mx-auto mb-4 " style="width: 18rem;">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Créations de sites web</h5>
+                                    <p class="card-text">Nous vous proposons de créer votre site web avec un design moderne et intuitif pour l'utilsateur.</p>
+
+                                </div>
+                                <hr class="w-75 m-auto">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Maintenance et suivis</h5>
+                                    <p class="card-text">Apres la creation de votre site web nous vous proposons de s'occuper de sa maintenance et d'implanter de nouvelles fonctionalitées et/ou des mise a jour.</p>
+
+                                </div>
+                            </div>
+                            <div class="card mx-auto mb-4" style="width: 18rem;">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Graphisme</h5>
+                                    <p class="card-text">Avec un designer dans notre équipe nous pouvons vous proposer des design moderne et fonctionnelle.</p>
+
+                                </div>
+                                <hr class="w-75 m-auto">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">SEO</h5>
+                                    <p class="card-text">Quand ont lance un site web il est parfois diffficile d'apparaitre en top des resultat de rechercher nous pouvons tout mettre en oeuvre pour vous assurer un boost de votre positionnement dans les differents moteurs de recherches.</p>
+
+                                </div>
+                            </div>
+                            <div class="card mx-auto" style="width: 18rem;">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Applications mobiles</h5>
+                                    <p class="card-text">Nous vous proposons un service de creation d'applications mobile si vous pensez avoir une idées n'hesitez plus contactez-nous.</p>
+
+                                </div>
+                                <hr class="w-75 m-auto">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Identité visuelle</h5>
+                                    <p class="card-text">Nous vous proposons une identité visuelle unique avec notre designer pour qu'aucun autre site ne vous ressemble  .</p>
+
+                                </div>
+                            </div>
+
+                            <iframe class="m-auto py-5 mx-auto"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185895.65220535075!2d5.38064835!3d43.28034529999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bf4344da5333%3A0x40819a5fd970220!2sMarseille!5e0!3m2!1sfr!2sfr!4v1661428195560!5m2!1sfr!2sfr"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
